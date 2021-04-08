@@ -374,7 +374,7 @@ Our Support services help you get maximum value from Cardins Travel and Tours Es
 								<div class="text-rights">
 									<h3 class="title">On Burundi Trips!</h3>
 									<p>This tour leads to magic birds watching heaven and admiring the beautifulness of Burundi.</p>
-									<p><a href="http://localhost/cardin/tour-place.php?tour_id=1" class="btn btn-primary">Book Now</a></p>
+									<p><a href="tour-place.php?tour_id=1" class="btn btn-primary">Book Now</a></p>
 								</div>
 							</div>
 						</div>
