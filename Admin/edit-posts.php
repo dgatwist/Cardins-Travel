@@ -7,7 +7,7 @@
 	 $data= htmlspecialchars($data);
 	 return $data;
   }
-    require("config.php");
+    require 'config.php';
 
   $post_id = $_GET['post_id'];
   $_SESSION['post_id']= $post_id;
