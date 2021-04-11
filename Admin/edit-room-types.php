@@ -171,6 +171,52 @@ scratch. This page gets rid of all links and provides the needed markup only.
 		      </select>
                 </div>*/
                   ?>
+		      <div class="form-group">
+                  <label>Hotel Name</label>
+                  <select class="form-control" name="hotel_id" required>
+                    <option value="">-SELECT-</option>
+                  <?php
+                      require 'config.php';
+
+                      if($_SESSION['user_role']== "Admin")
+                      {
+                        $statement="select hotel_id, title from hotels where deletedAt is null order by hotel_id asc";
+                        $result = mysqli_query($conn, $statement);
+
+                        if (mysqli_num_rows($result) > 0)
+                        {
+                            while($row = mysqli_fetch_assoc($result))
+                            {
+                              echo "<option value=\"$row[hotel_id]\">$row[title]</option>";
+                            }
+                        }
+                        else
+                        {
+                            echo "Nothing found in db";
+                        }                        
+                      }
+                      else if($_SESSION['user_role']== "Owner")
+                      {
+                        $statement="select hotel_id, title from hotels where owner='$_SESSION[user]' and deletedAt is null order by hotel_id asc";
+                        $result = mysqli_query($conn, $statement);
+
+                        if (mysqli_num_rows($result) > 0)
+                        {
+                            while($row = mysqli_fetch_assoc($result))
+                            {
+                              echo "<option value=\"$row[hotel_id]\">$row[title]</option>";
+                            }
+                        }
+                        else
+                        {
+                            echo "Nothing found in db";
+                        }                         
+                      }
+
+                      mysqli_close($conn);
+                  ?>
+                  </select>
+                </div>
                   
                 <div class="form-group">
                   <label>Room Type</label>
