@@ -111,12 +111,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <form role="form" name="room-type-new" method="post" action="" enctype="multipart/form-data">
               <div class="box-body">
 
-                <div class="form-group">
+               <!-- <div class="form-group">
                   <label>Hotel Name</label>
                   <select class="form-control" name="hotel_id">
-                    <option value="">-SELECT-</option>
+                    <option value="">-SELECT-</option>-->
                   <?php
-                      require 'config.php';
+                     /* require 'config.php';
 
                       if($_SESSION['user_role']== "Admin")
                       {
@@ -168,9 +168,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       }
 
                       mysqli_close($conn);
+		      </select>
+                </div>*/
                   ?>
-                  </select>
-                </div>
+                  
                 <div class="form-group">
                   <label>Room Type</label>
                   <select class="form-control" name="room_type">
