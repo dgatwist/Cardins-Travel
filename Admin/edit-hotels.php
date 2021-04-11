@@ -125,7 +125,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <select class="form-control" name="hotel_owner">
                     <option value="">-SELECT-</option>
                   <?php
-                      /*require 'config.php';
+                      require 'config.php';
 
                       $statement="select username from users where deletedAt is null";
                       $result = mysqli_query($conn, $statement);
@@ -148,7 +148,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       {
                           echo "Nothing found in db";
                       }
-                      mysqli_close($conn);*/
+                      //mysqli_close($conn);
                   ?>
                   </select>
                 </div>              
