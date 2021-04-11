@@ -120,12 +120,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <label>Hotel Description</label>
                   <textarea class="form-control" rows="3" id="hotel-desc" placeholder="Hotel Description" name="hotel_desc"><?php echo empty($hotel_descUpdated) ? $hotel_desc : $hotel_descUpdated ?></textarea>
                 </div>
-                <div class="form-group">
+                <!--<div class="form-group">
                   <label>Hotel Owner</label>
                   <select class="form-control" name="hotel_owner">
-                    <option value="">-SELECT-</option>
+                    <option value="">-SELECT-</option>-->
                   <?php
-                      require 'config.php';
+                      /*require 'config.php';
 
                       $statement="select username from users where deletedAt is null";
                       $result = mysqli_query($conn, $statement);
@@ -148,10 +148,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       {
                           echo "Nothing found in db";
                       }
-                      //mysqli_close($conn);
+                      mysqli_close($conn);
+		      </select>
+                </div>*/
                   ?>
-                  </select>
-                </div>              
+                                
                 <div class="form-group">
                   <label for="user-img">Upload Hotel Photo</label>
                   <input type="file" id="user-img" name="user_img">
