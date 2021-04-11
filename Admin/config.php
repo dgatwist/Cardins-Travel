@@ -5,10 +5,10 @@
 //$password = "";
 //$dbname="travel_db";
 
-//$servername = "remotemysql.com";
-//$username = "cLb5xOFkmA";
-//$password = "B0QlCVvG8s";
-//$dbname="cLb5xOFkmA";
+$servername = "remotemysql.com";
+$username = "cLb5xOFkmA";
+$password = "B0QlCVvG8s";
+$dbname="cLb5xOFkmA";
 //$servername = "us-cdbr-east-03.cleardb.com";
 //$username = "bc9441adb25ef1";
 //$password = "2de75689";
