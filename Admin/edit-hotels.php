@@ -152,6 +152,31 @@ scratch. This page gets rid of all links and provides the needed markup only.
 		      </select>
                 </div>*/
                   ?>
+		      <div class="form-group">
+                  <label>Hotel Owner</label>
+                  <select class="form-control" name="hotel_owner" required>
+                    <option value="">-SELECT-</option>
+                  <?php
+                      require 'config.php';
+
+                      $statement="select username from users where deletedAt is null";
+                      $result = mysqli_query($conn, $statement);
+
+                      if (mysqli_num_rows($result) > 0)
+                      {
+                          while($row = mysqli_fetch_assoc($result))
+                          {
+                            echo "<option value=\"$row[username]\">$row[username]</option>";
+                          }
+                      }
+                      else
+                      {
+                          echo "Nothing found in db";
+                      }
+                      mysqli_close($conn);
+                  ?>
+                  </select>
+                </div>
                                 
                 <div class="form-group">
                   <label for="user-img">Upload Hotel Photo</label>
