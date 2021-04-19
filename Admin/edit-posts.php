@@ -7,7 +7,7 @@
 	 $data= htmlspecialchars($data);
 	 return $data;
   }
-    require("config.php");
+    require 'config.php';
 
   $post_id = $_GET['post_id'];
   $_SESSION['post_id']= $post_id;
@@ -101,7 +101,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Add New</h3>
+              <h3 class="box-title">Edit</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
@@ -113,12 +113,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <input type="text" class="form-control" id="package-name" placeholder="Package Name" name="package_name" value="<?php echo empty($package_titleUpdated) ? $package_title : $package_titleUpdated ?>" required>
                 </div>
                 
-                <div class="form-group">
+               <!-- <div class="form-group">
                    <label>Category</label>
                   <select class="form-control" name="cat_id">
-                    <option value="">-SELECT-</option>
+                    <option value="">-SELECT-</option>-->
                   <?php
-                      require 'config.php';
+                      /*require 'config.php';
 
                       $statement="select cat_id, title from categories where deletedAt is NULL order by cat_id asc";
                       $result = mysqli_query($conn, $statement);
@@ -135,6 +135,32 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             {
                               echo "<option value=\"$row[cat_id]\">$row[title]</option>";
                             }
+                          }
+                      }
+                      else
+                      {
+                          echo "Nothing found in db";
+                      }
+                      mysqli_close($conn);
+                  ?>
+                  </select>
+                </div>*/
+	?>
+		      <div class="form-group">
+                  <label>Category</label>
+                  <select class="form-control" name="cat_id">
+                    <option value="">-SELECT-</option>
+                  <?php
+                      require 'config.php';
+
+                      $statement="select cat_id, title from categories where deletedAt is NULL";
+                      $result = mysqli_query($conn, $statement);
+
+                      if (mysqli_num_rows($result) > 0)
+                      {
+                          while($row = mysqli_fetch_assoc($result))
+                          {
+                            echo "<option value=\"$row[cat_id]\">$row[title]</option>";
                           }
                       }
                       else
