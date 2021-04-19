@@ -136,7 +136,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </div>
                 <div class="form-group">
                   <label>Package Description</label>
-                  <textarea class="form-control" rows="3" id="packageDesc" placeholder="Package Description" name="package_desc"><?php echo empty($package_descUpdated) ? $package_desc : $package_descUpdated ?>"></textarea>
+                  <textarea class="form-control" rows="3" id="packageesc" placeholder="Package Description" name="package_desc"><?php echo empty($package_descUpdated) ? $package_desc : $package_descUpdated ?>"></textarea>
                 </div>  
                 <!--<div class="form-group">
                   <label>Package Owner</label>
