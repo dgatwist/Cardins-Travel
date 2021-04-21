@@ -57,11 +57,10 @@
 						<h4>Contact Information</h4>
 						<ul class="colorlib-footer-links" >
 							<li>88, Boulevard Mwezi Gisabo <br> Bujumbura, Burundi</li>
-							<li class="colorlib-social-icons"><a href="tel://00447440707022">+447440707022 </a><i class="icon-whatsapp"></i></li>
-							<li class="colorlib-social-icons"><a href="tel://0025768830606">+25768830606 </a><i class="icon-skype"></i></li>
+							<li ><a href="tel://00447440707022">+447440707022 </a><i class="icon-whatsapp"></i></li>
+							<li ><a href="tel://0025768830606">+25768830606 </a><i class="icon-phone"></i></li>
 
 							<li><a href="mailto:cardinstravelandtours@gmail.com">cardinstravelandtours@gmail.com</a></li>
-							<li><a href="http://Instagram.com/cardinstravelandtours">Find Us On Instagram</a></li>
 						</ul>
 					</div>
 				</div>
