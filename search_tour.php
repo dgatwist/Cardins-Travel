@@ -154,7 +154,7 @@ else if($_SESSION['currency']=="EUR")
 								echo "<div class=\"col-md-6 col-sm-6 animate-box\">";
 								 echo "<div class=\"tour\">";
 										echo "<a href=\"tour-place.php?tour_id=$row[tour_id]\" class=\"tour-img\" style=\"background-image: url(Admin/$row[image]);\">";
-										echo "<p class=\"price\"><span>$_SESSION[c_symbol]$price</span> <small>/ 3 Days</small></p>";
+										echo "<p class=\"price\"><span>$_SESSION[c_symbol]$price</span> <small>/ $row[days] Days</small></p>";
 										echo "</a>";
 										echo "<span class=\"desc\">";
 										echo "<h2><a href=\"tour-place.php?tour_id=$row[tour_id]\">$row[title]</a></h2>";
