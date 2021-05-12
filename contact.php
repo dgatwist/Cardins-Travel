@@ -27,14 +27,7 @@ if(isset($_POST['submit'])){
     mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
     $notifyMsg= "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
     // You can also use header('Location: thank_you.php'); to redirect to another page.
-	if (mail($to, $subject, $message, $headers))
-{
-    echo "Message accepted";
-}
-else
-{
-    echo "Error: Message not accepted";
-}
+	
     }
     else
     {
