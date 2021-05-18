@@ -21,7 +21,7 @@ else if($_SESSION['currency']=="EUR")
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<script data-ad-client="ca-pub-5380283051139290" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Cardin Travel and Tours</title>
@@ -76,7 +76,7 @@ else if($_SESSION['currency']=="EUR")
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
+        <script data-ad-client="ca-pub-5380283051139290" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	</head>
 	<body>
 
