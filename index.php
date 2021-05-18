@@ -76,7 +76,8 @@ else if($_SESSION['currency']=="EUR")
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-        <script data-ad-client="ca-pub-5380283051139290" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+     
+		<script data-ad-client="ca-pub-5380283051139290" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	</head>
 	<body>
 
