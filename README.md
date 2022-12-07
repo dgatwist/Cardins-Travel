@@ -1,5 +1,5 @@
 # CARDINS Travel and Tours
-Travel Agency Website for Web Technologies Course
+Travel Agency Website
 
 Key Features
 1. Booking Hotels
